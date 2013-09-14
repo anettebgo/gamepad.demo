@@ -1,0 +1,138 @@
+#tetris	{
+	position: fixed;
+	margin-top: 60px;
+	margin-left: 160px;
+}
+
+#tetris-area {
+	background:	#fff;
+	position: fixed;
+	width: 480px;
+	height:	480px;
+	overflow: hidden;
+	border: 1px	solid #898989;
+}
+
+.grid1,	.grid2,	.grid3,	.grid4,	.grid5,	.grid6, .grid7, .grid8 { 
+	z-index: 10; 
+	position: absolute; 
+	top: 0px;	
+	width: 30px; 
+	height: 480px;	
+	background:	#f4efe9; }
+.grid1 { left: 30px; }
+.grid2 { left: 90px; }
+.grid3 { left: 150px; }
+.grid4 { left: 210px; }
+.grid5 { left: 270px; }
+.grid6 { left: 330px; }
+.grid7 { left: 390px; }
+.grid8 { left: 450px; }
+
+#tetris	.block0,
+#tetris	.block1,
+#tetris	.block2,
+#tetris	.block3,
+#tetris	.block4,
+#tetris	.block5,
+#tetris	.block6	{
+	z-index: 1000;
+	font-size: 30px;
+	line-height: 1em;
+	font-family: arial;
+	position: absolute;
+	width: 30px;
+	height:	30px;
+	border:	1px solid #ffffff;
+}
+
+
+/*
+	|
+	---
+*/
+#tetris	.block1	{ background: #32a4fa; }
+
+/*
+	  |
+	---
+*/
+#tetris	.block0	{ background: #38C44F; }
+
+
+
+/*
+	--
+   --
+*/
+#tetris	.block2	{ background: #FFAC1C; }
+
+/*
+	--
+	 --
+*/
+#tetris	.block3	{ background: #FF6600; }
+
+/*
+	|
+   ---
+*/
+#tetris	.block4	{ background: #CC54C4; }
+
+/*
+	--
+	--
+*/
+#tetris	.block5	{ background: #999;	}
+
+/*
+	----
+*/
+#tetris	.block6	{ background: #FF0000; }
+
+
+/*** window	***/
+
+#tetris	.window	{
+	background:	#EFE8DE;
+	position: fixed;
+	width: 167px;
+	height:	307px;
+	left: 132px;
+	top: 1px;
+	z-index: 50000;
+	display: none;
+}
+#tetris	.window	.top {
+	position: fixed;
+	background:	#EAE0D1;
+	color: #666666;
+	letter-spacing:	+1px;
+	height:	20px;
+	line-height: 20px;
+	vertical-align:	middle;
+	border-bottom: 1px solid #ffffff;
+	text-indent: 10px;
+}
+#tetris	.window	.top .close	{
+	position: fixed;
+	background:	#EAE0D1;
+	font-family: verdana;
+	font-weight: bold;
+	right: 0px;
+	top: 0px;
+	height:	20px;
+	line-height: 19px;
+	text-indent: 7px;
+	width: 21px;
+	border-left: 1px solid #ffffff;
+	cursor:	pointer;
+}
+#tetris	.window	.top .close:hover {
+	background:	#EFE8DE;
+}
+#tetris	.window	.content {
+	margin:	10px;
+}
+#tetris	.window	.content table {
+}

@@ -1,0 +1,405 @@
+@font-face
+{
+	font-family: typewriter;
+	src: url('../fonts/MyUnderwood.ttf') format('truetype')
+}
+
+@font-face
+{
+	font-family: animals;
+	src: url('../fonts/Zooland.ttf') format('truetype')
+}
+
+body {
+	font-family: typewriter;	
+}
+
+h2 {
+	font-size: 1em;
+	text-align: center;
+}
+
+.mouse{
+	font-family:animals;
+	font-size:2.3em;
+}
+
+.underwood{
+	font-family: typewriter;
+	font-size:6.8em;
+}
+
+.svg-wrapper{
+	position:relative; 
+	width:800px; 
+	height:300px;
+    border:3px solid green;
+    margin:0 auto
+}
+svg { position:absolute; }
+
+section {
+	width: 800px;
+	height: 600px;
+	box-shadow: 5px 5px 5px 5px #888888;
+	border: 1px solid gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -410px;
+	margin-top: -310px;
+	transform: none;
+	opacity: 0;
+	padding: 20px;
+}
+
+section.bespoke-slide {
+	transition: all 0.5s ease-out;
+ 	opacity: 0;
+}
+
+section.bespoke-active {
+	opacity: 1;
+	transition-delay: .3s;
+	z-index: 1;
+}
+
+section.bespoke-inactive {
+  opacity: 0;
+}
+
+section.bespoke-before {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 2;
+}
+
+section.bespoke-after {
+  transform: translateX(-50%);
+}
+
+
+.bespoke-parent{
+	font-size: 2em;
+	perspective: 600;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+
+.front-text{
+	font-size: 0.8em;
+	height: 50px;
+	width: 280px;
+	opacity: 0.7;
+	text-align: left;	
+}
+
+.tw {
+	float: right;
+	line-height: 60px;
+	height: 60px;
+}
+
+.left{
+	float: left;
+}
+
+.twitter {
+	background-image: url(../img/twitter.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 8px;
+	padding-left: 70px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.intro{
+	font-size: 1.5em;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.tilt {
+	-webkit-transform: rotate(30deg); 
+	transition: all 1.0s ease-in;
+	margin-top: 200px;
+	opacity: 1;
+	position: fixed;
+	text-align: center;
+	width: 800px;
+	color: red;	
+	font-weight: bold;
+	font-size: 2.7em;
+}
+
+.standard-gamepad-background {
+	height: 500px; 
+	margin-top: 60px;
+	background-image: url(../img/standard_gamepad.png); 
+	background-repeat: no-repeat; 
+	background-size: contain;
+	width: 800px;
+	height: 500px;	
+}
+
+.jsconf{
+	background-image: url(../img/js.eu.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 600px;
+	width: 800px;	
+}
+
+.dropbear{
+	background-image: url(../img/drop_bear_warning.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 600px;
+	width: 800px;	
+}
+
+.standard-gamepad {
+	margin-top: 60px;
+	font-size:0.4em;
+	background-image: url(../img/standard_gamepad.png);
+	width: 800px;
+	height: 500px;
+	background-repeat: no-repeat; 
+	background-size: contain;
+}
+
+.dot{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: #0000FF;
+	position: absolute;
+	top: 500px;
+	left: 375px;
+	z-index: 1;
+}
+
+.tux{
+	background-image:url(../img/tux.png);
+}
+
+.osx{
+	background-image:url(../img/apple.png);
+}
+
+.win{
+	background-image:url(../img/windows.png);
+}
+
+.safari {
+	background-image:url(../img/safari.png);	
+}
+
+.chrome {
+	background-image:url(../img/chrome.png);	
+}
+
+.firefox {
+	background-image:url(../img/firefox.png);	
+}
+
+.explorer {
+	background-image:url(../img/explorer.png);	
+}
+
+.browser-logo {
+	height: 130px;
+	width: 130px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	font-size: 0.8em;
+}
+
+.browser-compat{
+	text-align: center;
+}
+
+
+.tetris-sample{
+	text-align: left;
+	font-size: 0.7em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.bgimg {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.magda {
+	background-image: url(../img/magda.jpg);
+}
+
+.magda-inner {
+	color: white;
+	padding-top: 200px;
+	padding-left: 200px;
+	font-size: 2em;
+}
+
+.accessibility-pieces{
+	background-image: url(../img/access_controller_pieces.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	height: 400px;
+	width: 400px;
+	margin-top: 160px;
+}
+.accessibility-diagram{
+	background-image: url(../img/access_controller_diagram.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right;
+	height: 400px;
+	width: 400px;
+	margin-top: 120px;
+}
+
+.tetris-credit{
+	float: left;
+	font-size: 0.3em;
+	margin-top: 570px;
+}
+
+.controllers td{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: bottom;
+	text-align: right;
+	height: 196px;
+	width: 200px;
+	font-size: 3em;
+}
+
+.controller{
+	color: #00FF00;	
+}
+
+.keyboard{
+	color: #FF0000;
+}
+
+.controller-1 {
+	background-image:url(../img/apple_controller.jpg);
+}
+
+.controller-2 {
+	background-image:url(../img/ps3_controller.png);
+}
+
+.controller-3 {
+	background-image:url(../img/access_controller.jpg);
+}
+
+.controller-4 {
+	background-image:url(../img/tron_controller.jpg);
+}
+
+.controller-5 {
+	background-image:url(../img/xbox_controller.jpg);
+}
+
+.controller-6 {
+	background-image:url(../img/NES_controller.jpg);
+}
+
+.controller-7 {
+	background-image:url(../img/nintendo_ds_pink.jpg);
+}
+
+.controller-8 {
+	background-image:url(../img/wiimote_black.jpg);
+}
+
+.keyboard-1 {
+	background-image:url(../img/typewriter.jpg);
+}
+
+.keyboard-2 {
+	background-image:url(../img/keyboard_c64.jpg);
+}
+
+.keyboard-3 {
+	background-image:url(../img/keyboard_IBM.jpg);
+}
+
+.keyboard-4 {
+	background-image:url(../img/keyboard_apple.png);
+}
+
+.access-controllers{
+	 margin-top: 60px;
+}
+.access-controllers td{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 250px;
+	width: 300px;
+	font-size: 3em;
+}
+
+.access-controller-5 {
+	background-image:url(../img/dragonplus-controller.jpg);
+}
+
+.access-controller-2 {
+	background-image:url(../img/separate-controller-diagram.jpg);
+}
+
+.access-controller-3 {
+	background-image:url(../img/ascii-grip.jpg);
+}
+
+.access-controller-4 {
+	background-image:url(../img/ben_heck_custom.jpg);
+}
+
+.access-controller-1 {
+	background-image:url(../img/switch_controller.jpg);
+}
+
+.code-sample {
+	text-align: left;
+	font-size: 0.9em;
+	margin-top: 60px;
+	height: 160px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding-left: 150px;
+}
+
+.github{
+	background-image: url(../img/github.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 70px;
+	margin-bottom: 40px;
+	margin-top: 200px;
+}
+
+.on {
+	fill:#00FF00 !important; /*don't judge me!*/
+}
+
+
+
+
