@@ -41,8 +41,6 @@ svg { position:absolute; }
 section {
 	width: 800px;
 	height: 600px;
-	box-shadow: 5px 5px 5px 5px #888888;
-	border: 1px solid gray;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -238,6 +236,12 @@ section.bespoke-after {
 .bgimg {
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.drums {
+	background-image: url(../img/drums.jpg);
+	height: 600px;
+	width: 800px;
 }
 
 .magda {
